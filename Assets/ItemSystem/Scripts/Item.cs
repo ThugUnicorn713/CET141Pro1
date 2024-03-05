@@ -31,6 +31,8 @@ public class Item : MonoBehaviour
 
     [SerializeField]
     bool isPickupOnCollision = false;
+
+    [SerializeField] int pointValue = 1;
     private void Start()
     {
         if (isPickupOnCollision)
@@ -81,6 +83,7 @@ public class Item : MonoBehaviour
             {
                 Destroy(gameObject);
             }
+            GameManager.IncrementScore(pointValue);
         }
     }
 }
