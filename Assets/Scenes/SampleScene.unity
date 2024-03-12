@@ -663,6 +663,11 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!1 &559258283 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2568025936750423869, guid: 9c01b0167a7584946af170f9df560e14, type: 3}
+  m_PrefabInstance: {fileID: 2508703362533236043}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &617010788
 GameObject:
   m_ObjectHideFlags: 0
@@ -1075,6 +1080,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &968134715 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5305854611466741415, guid: 9c01b0167a7584946af170f9df560e14, type: 3}
+  m_PrefabInstance: {fileID: 2508703362533236043}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1042591601 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6741245314896073144, guid: 76ba7b3535e00ad4ca324382caddae8c, type: 3}
@@ -1102,6 +1118,7 @@ MonoBehaviour:
   isStorable: 0
   isConsumable: 1
   isPickupOnCollision: 0
+  pointValue: 1
 --- !u!1 &1134961905
 GameObject:
   m_ObjectHideFlags: 0
@@ -1341,6 +1358,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreValue: {fileID: 2508703362533236045}
   timeValue: {fileID: 2508703362533236044}
+  gameoverPanel: {fileID: 559258283}
+  endScoreValue: {fileID: 968134715}
 --- !u!114 &1315923523
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2031,6 +2050,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2568025936750423869, guid: 9c01b0167a7584946af170f9df560e14, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5209760845075740650, guid: 9c01b0167a7584946af170f9df560e14, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
